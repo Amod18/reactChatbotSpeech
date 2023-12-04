@@ -1,0 +1,244 @@
+[
+    {
+        "id": "-2",
+        "message": "Choose a language",
+        "trigger": "-1"
+    },
+    {
+        "id": "-1",
+        "options": [
+            {
+                "value": "English",
+                "label": "English",
+                "user": true,
+                "trigger": "eng-1"
+            },
+            {
+                "value": "ಕನ್ನಡ",
+                "label": "ಕನ್ನಡ",
+                "user": true,
+                "trigger": "kan--1"
+            }
+        ]
+    },
+    {
+        "id": "eng-1",
+        "message": "Welcome to the chatbot. May I know your name?",
+        "trigger": "eng-user-inp"
+    },
+    {
+        "id": "eng-user-inp",
+        "user": true,
+        "trigger": "eng-user-inp-display"
+    },
+    {
+        "id": "eng-user-inp-display",
+        "message": "Hello {previousValue}, What Adhaar realted queries do you have?",
+        "trigger": "eng-2"
+    },
+    {
+        "id": "kan--1",
+        "message": "ಚಾಟ್‌ಬಾಟ್‌ಗೆ ಸ್ವಾಗತ. ನಿಮ್ಮ ಹೆಸರನ್ನು ತಿಳಿಸಬಹುದೇ?",
+        "trigger": "kan-user-inp"
+    },
+    {
+        "id": "kan-user-inp",
+        "user": true,
+        "trigger": "kan-user-inp-display"
+    },
+    {
+        "id": "kan-user-inp-display",
+        "message": "ಹಲೋ {previousValue}, ನೀವು ಯಾವ ಆಧಾರ್ ನೈಜ ಪ್ರಶ್ನೆಗಳನ್ನು ಹೊಂದಿದ್ದೀರಿ?",
+        "trigger": "kan-2"
+    },
+    {
+        "id": "eng-2",
+        "options": [
+            {
+                "value": "eng-3",
+                "label": "For 0-5 Years Enrollment",
+                "trigger": "eng-21"
+            },
+            {
+                "value": "eng-5",
+                "label": "For Above 5 years Enrollment",
+                "trigger": "eng-22"
+            },
+            {
+                "value": "eng-7",
+                "label": "Name Update",
+                "trigger": "eng-23"
+            },
+            {
+                "value": "eng-9",
+                "label": "Address Update",
+                "trigger": "eng-24"
+            },
+            {
+                "value": "eng-11",
+                "label": "Date of Birth Update",
+                "trigger": "eng-25"
+            },
+            {
+                "value": "eng-13",
+                "label": "Gender Update",
+                "trigger": "eng-26"
+            },
+            {
+                "value": "eng-15",
+                "label": "Biometric Update",
+                "trigger": "eng-27"
+            },
+            {
+                "value": "eng-17",
+                "label": "Mobile No. Update",
+                "trigger": "eng-28"
+            },
+            {
+                "value": "eng-19",
+                "label": "Email ID Update",
+                "trigger": "eng-29"
+            }
+        ]
+    },
+    {
+        "id": "eng-21",
+        "message": "You must submit any of the following valid documents:\n- POR (Proof of Relationship) or DOB (Date of Birth)",
+        "trigger": "eng-2"
+    },
+    {
+        "id": "eng-22",
+        "message": "You need one of these valid documents: \n Proof of Identity with your name, photograph and date of birth. Proof of Relationship displaying your and the head of Family's name.",
+        "trigger": "eng-2"
+    },
+    {
+        "id": "eng-23",
+        "message": "You must submit any of the following valid documents:\n- POI (Proof of Identity) Document Containing Name and Photograph",
+        "trigger": "eng-2"
+    },
+    {
+        "id": "eng-24",
+        "message": "You must submit any of the following valid documents:\n- POA (Proof of Address) Document Containing Name and Indian Address",
+        "trigger": "eng-2"
+    },
+    {
+        "id": "eng-25",
+        "message": "You must document containing your name and date of birth",
+        "trigger": "eng-2"
+    },
+    {
+        "id": "eng-26",
+        "message": "You must submit any of the valid documents Containing Name and Date Of Birth",
+        "trigger": "eng-2"
+    },
+    {
+        "id": "eng-27",
+        "message": "Please visit any nearby K1/B1 Center with Aadhaar card",
+        "trigger": "eng-2"
+    },
+    {
+        "id": "eng-28",
+        "message": "Please visit any nearby K1/B1 Center with Aadhaar card",
+        "trigger": "eng-2"
+    },
+    {
+        "id": "eng-29",
+        "message": "Please visit any nearby K1/B1 Center with Aadhaar card",
+        "trigger": "eng-2"
+    },
+    {
+        "id": "kan-2",
+        "options": [
+            {
+                "value": "kan-3",
+                "label": "0-5 ವರ್ಷಗಳ ನೊಂದಣಿಗೆ",
+                "trigger": "kan-21"
+            },
+            {
+                "value": "kan-5",
+                "label": "5 ವರ್ಷಗಳಿಗಿಂತ ಹೆಚ್ಚು ನೊಂದಣಿಗೆ",
+                "trigger": "kan-22"
+            },
+            {
+                "value": "kan-7",
+                "label": "ಹೆಸರು ನವಿರುವುದು",
+                "trigger": "kan-23"
+            },
+            {
+                "value": "kan-9",
+                "label": "ವಿಳಾಸ ನವಿರುವುದು",
+                "trigger": "kan-24"
+            },
+            {
+                "value": "kan-11",
+                "label": "ಹುಟ್ಟು ದಿನ ನವಿರುವುದು",
+                "trigger": "kan-25"
+            },
+            {
+                "value": "kan-13",
+                "label": "ಲಿಂಗ ನವಿರುವುದು",
+                "trigger": "kan-26"
+            },
+            {
+                "value": "kan-15",
+                "label": "ಬಯೋಮೆಟ್ರಿಕ್ ನವಿರುವುದು",
+                "trigger": "kan-27"
+            },
+            {
+                "value": "kan-17",
+                "label": "ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನವಿರುವುದು",
+                "trigger": "kan-28"
+            },
+            {
+                "value": "kan-19",
+                "label": "ಇಮೇಲ್ ಐಡಿ ನವಿರುವುದು",
+                "trigger": "kan-29"
+            }
+        ]
+    },
+    {
+        "id": "kan-21",
+        "message": " ನೀವು ಈ ಯುವ ದಾಖಲೆಗಳಲ್ಲಿನ ಯಾವುದಾದರೂ ಒಂದನ್ನು ಸಲ್ಲಿಸಬೇಕು:\n- POR (ಸಂಬಂಧ ಸಾಕ್ಷ್ಯ)\n- DOB (ಹುಟ್ಟು ದಿನ)",
+        "trigger": "kan-2"
+    },
+    {
+        "id": "kan-22",
+        "message": "ನಿಮಗೆ ಈ ಮಾನ್ಯವಾದ ದಾಖಲೆಗಳಲ್ಲಿ ಒಂದರ ಅಗತ್ಯವಿದೆ: \n ನಿಮ್ಮ ಹೆಸರು, ಛಾಯಾಚಿತ್ರ ಮತ್ತು ಹುಟ್ಟಿದ ದಿನಾಂಕದೊಂದಿಗೆ ಗುರುತಿನ ಪುರಾವೆ. ನಿಮ್ಮ ಮತ್ತು ಕುಟುಂಬದ ಮುಖ್ಯಸ್ಥರನ್ನು ಪ್ರದರ್ಶಿಸುವ ಸಂಬಂಧದ ಪುರಾವೆ.",
+        "trigger": "kan-2"
+    },
+    {
+        "id": "kan-23",
+        "message": " ನೀವು ಈ ಯುವ ದಾಖಲೆಗಳಲ್ಲಿನ ಯಾವುದಾದರೂ ಒಂದನ್ನು ಸಲ್ಲಿಸಬೇಕು:\n- POI (ವ್ಯಕ್ತಿಗತ ಸಾಕ್ಷ್ಯ) ನಾಮ ಮತ್ತು ಛಾಯಾಚಿತ್ರ ಹೊಂದಿರುವ ದಾಖಲೆ",
+        "trigger": "kan-2"
+    },
+    {
+        "id": "kan-24",
+        "message": " ನೀವು ಈ ಯುವ ದಾಖಲೆಗಳಲ್ಲಿನ ಯಾವುದಾದರೂ ಒಂದನ್ನು ಸಲ್ಲಿಸಬೇಕು:\n- POA (ವಿಳಾಸ ಸಾಕ್ಷ್ಯ) ನಾಮ ಮತ್ತು ಭಾರತೀಯ ವಿಳಾಸ ಹೊಂದಿರುವ ದಾಖಲೆ",
+        "trigger": "kan-2"
+    },
+    {
+        "id": "kan-25",
+        "message": "ನಿಮ್ಮ ಹೆಸರು ಮತ್ತು ಜನ್ಮ ದಿನಾಂಕವನ್ನು ಒಳಗೊಂಡಿರುವ ದಾಖಲೆಯನ್ನು ನೀವು ಮಾಡಬೇಕು",
+        "trigger": "kan-2"
+    },
+    {
+        "id": "kan-26",
+        "message": " ನೀವು ಈ ಯುವ ದಾಖಲೆಗಳಲ್ಲಿನ ಯಾವುದಾದರೂ ಒಂದನ್ನು ಸಲ್ಲಿಸಬೇಕು.",
+        "trigger": "kan-2"
+    },
+    {
+        "id": "kan-27",
+        "message": " ದಯವಿಟ್ಟು ನಿಮ್ಮ ಹತ್ತಿರದ ಯಾವುದೇ ಸಮೀಪದ K1/B1 ಕೇಂದ್ರಕ್ಕೆ ಆಧಾರ್ ಕಾರ್ಡ್‌ನೊಂದಿಗೆ ಭೇಟಿಯಿಡಿ",
+        "trigger": "kan-2"
+    },
+    {
+        "id": "kan-28",
+        "message": " ದಯವಿಟ್ಟು ನಿಮ್ಮ ಹತ್ತಿರದ ಯಾವುದೇ ಸಮೀಪದ K1/B1 ಕೇಂದ್ರಕ್ಕೆ ಆಧಾರ್ ಕಾರ್ಡ್‌ನೊಂದಿಗೆ ಭೇಟಿಯಿಡಿ",
+        "trigger": "kan-2"
+    },
+    {
+        "id": "kan-29",
+        "message": " ದಯವಿಟ್ಟು ನಿಮ್ಮ ಹತ್ತಿರದ ಯಾವುದೇ ಸಮೀಪದ K1/B1 ಕೇಂದ್ರಕ್ಕೆ ಆಧಾರ್ ಕಾರ್ಡ್‌ನೊಂದಿಗೆ ಭೇಟಿಯಿಡಿ",
+        "trigger": "kan-2"
+    }
+]
